@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <h1>Comércio</h1>
+    <select id="categoria">
+        <option value="">Selecione uma categoria</option>
+        <option value="Armas">Armas</option>
+        <option value="Armaduras">Armaduras</option>
+        <option value="Escudos">Escudos</option>
+        <option value="Itens">Itens</option>
+        <option value="Poções">Poções</option>
+    </select>
+
+    <select id="subcategoria">
+        <option value="">Selecione uma subcategoria</option>
+    </select>
+
+    <button onclick="filtrarItens()">Filtrar</button>
+
+    <div id="equipamentos-container" class="card-container"></div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
