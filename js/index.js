@@ -1,7 +1,7 @@
 function filtrarItens() {
     var categoriaSelecionada = document.getElementById('categoria').value;
     var subcategoriaSelecionada = document.getElementById('subcategoria').value;
-    var equipamentosFiltrados = equipamentos.filter(function (item) {
+    var equipamentosFiltrados = equips.filter(function (item) {
         return item.categoria === categoriaSelecionada && item.subcategoria === subcategoriaSelecionada;
     });
     exibirItens(equipamentosFiltrados);
@@ -66,84 +66,28 @@ function exibirItens(itens) {
     });
 }
 
-// Atualizar as subcategorias quando uma categoria for selecionada
-// document.getElementById('categoria').addEventListener('change', atualizarSubcategorias);
-var categoriaSelect = document.getElementById('categoria');
-if (categoriaSelect) {
-    console.log('ola');
-    categoriaSelect.addEventListener('change', atualizarSubcategorias);
+function carregarEquipamentos() {
+    return fetch('../itens/itens.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar os dados dos equipamentos');
+            }
+            return response.json();
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
 }
 
-// Sua lista de equipamentos (exemplo)
-var equipamentos = [
-    {
-        "nome": "item1",
-        "tipo": "espada",
-        "dano": "1d6 + 2",
-        "categoria": "Armas",
-        "subcategoria": "Espada"
-    },
-    {
-        "nome": "item2",
-        "tipo": "Machado",
-        "dano": "1d6 + 2",
-        "categoria": "Armas",
-        "subcategoria": "Machado"
-    },
-    {
-        "nome": "item3",
-        "tipo": "armadura leve",
-        "defesa": "+2",
-        "categoria": "Armaduras",
-        "subcategoria": "Leve"
-    },
-    {
-        "nome": "item4",
-        "tipo": "armadura pesada",
-        "defesa": "+2",
-        "categoria": "Armaduras",
-        "subcategoria": "Pesada"
-    },
-    {
-        "nome": "item5",
-        "tipo": "escudo pequeno",
-        "defesa": "+1",
-        "categoria": "Escudos",
-        "subcategoria": "Pequeno"
-    },
-    {
-        "nome": "item6",
-        "tipo": "escudo medio",
-        "defesa": "+1",
-        "categoria": "Escudos",
-        "subcategoria": "Médio"
-    },
-    {
-        "nome": "item7",
-        "tipo": "item comida",
-        "descricao": "Alguma descrição",
-        "categoria": "Itens",
-        "subcategoria": "Comida"
-    },
-    {
-        "nome": "item8",
-        "tipo": "item geral",
-        "descricao": "Alguma descrição",
-        "categoria": "Itens",
-        "subcategoria": "Geral"
-    },
-    {
-        "nome": "item9",
-        "tipo": "pocao de cura",
-        "efeito": "Cura +20",
-        "categoria": "Poções",
-        "subcategoria": "Vida"
-    },
-    {
-        "nome": "item10",
-        "tipo": "pocao de mana",
-        "efeito": "Cura +20",
-        "categoria": "Poções",
-        "subcategoria": "Mana"
-    }
-];
+equips = [];
+
+carregarEquipamentos().then(equipamentos => {
+    equips = equipamentos;
+});
+
+document.addEventListener('DOMContentLoaded', carregarEquipamentos);
+
+var categoriaSelect = document.getElementById('categoria');
+if (categoriaSelect) {
+    categoriaSelect.addEventListener('change', atualizarSubcategorias);
+}
