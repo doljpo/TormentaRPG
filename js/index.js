@@ -13,7 +13,7 @@ function atualizarSubcategorias() {
     subcategoriaSelect.innerHTML = '<option value="">Selecione uma subcategoria</option>';
 
     if (categoriaSelecionada === 'Armas') {
-        adicionarOpcoesSubcategoria(['Espada', 'Machado']);
+        adicionarOpcoesSubcategoria(['Armas Simples', 'Machado']);
     } else if (categoriaSelecionada === 'Armaduras') {
         adicionarOpcoesSubcategoria(['Leve', 'Pesada']);
     } else if (categoriaSelecionada === 'Escudos') {

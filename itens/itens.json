@@ -1,10 +1,179 @@
 [
     {
-        "nome": "item1",
-        "tipo": "espada",
-        "dano": "1d6 + 2",
+        "nome": "Adaga",
+        "dano": "1d4",
+        "critico": "19",
+        "peso": "0.5kg",
+        "tipo": "Perfuração",
+        "preco": "2 T$",
+        "descricao": "Essa faca afiada é muito usada por ladrões e assassinos, por ser facilmente escondida. Você recebe um bônus de +4 em testes de Ladinagem para escondê-la. Uma adaga também pode ser arremessada.",
         "categoria": "Armas",
-        "subcategoria": "Espada"
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "Espada Curta",
+        "preco": "10 T$",
+        "dano": "1d6",
+        "critico": "19",
+        "peso": "1 kg",
+        "tipo": "Perfuração",
+        "descricao": "É o mais comum tipo de espada, muito usada por milicianos e soldados rasos - ou ainda como armasecundária. Possui entre 40 a 50 cm de comprimento",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "Manopla",
+        "preco": "5 T$",
+        "dano": "1d4",
+        "critico": "20",
+        "peso": "1 kg",
+        "tipo": "Esmagamento",
+        "descricao": "Uma luva metálica que protege a mão e também permite socos mais fortes. Uma armadura completa inclui um par de manoplas. Você não pode ser desarmado quando usa esta arma. ",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "dano": "",
+        "critico": "20",
+        "peso": "kg",
+        "tipo": "",
+        "descricao": "",
+        "categoria": "Armas",
+        "subcategoria": "Armas Simples"
     },
     {
         "nome": "item2",
