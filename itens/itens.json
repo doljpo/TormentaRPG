@@ -1,179 +1,161 @@
 [
+    // Armas
+    //  Simples
     {
         "nome": "Adaga",
+        "preco": "2 T$",
         "dano": "1d4",
         "critico": "19",
-        "peso": "0.5kg",
+        "espaco": "1",
         "tipo": "Perfuração",
-        "preco": "2 T$",
         "descricao": "Essa faca afiada é muito usada por ladrões e assassinos, por ser facilmente escondida. Você recebe um bônus de +4 em testes de Ladinagem para escondê-la. Uma adaga também pode ser arremessada.",
         "categoria": "Armas",
-        "subcategoria": "Armas Simples"
+        "subcategoria": "Simples"
     },
     {
         "nome": "Espada Curta",
         "preco": "10 T$",
         "dano": "1d6",
         "critico": "19",
-        "peso": "1 kg",
+        "espaco": "1",
         "tipo": "Perfuração",
         "descricao": "É o mais comum tipo de espada, muito usada por milicianos e soldados rasos - ou ainda como armasecundária. Possui entre 40 a 50 cm de comprimento",
         "categoria": "Armas",
-        "subcategoria": "Armas Simples"
+        "subcategoria": "Simples"
     },
     {
         "nome": "Manopla",
         "preco": "5 T$",
         "dano": "1d4",
         "critico": "20",
-        "peso": "1 kg",
+        "espaco": "1",
         "tipo": "Esmagamento",
         "descricao": "Uma luva metálica que protege a mão e também permite socos mais fortes. Uma armadura completa inclui um par de manoplas. Você não pode ser desarmado quando usa esta arma. ",
         "categoria": "Armas",
-        "subcategoria": "Armas Simples"
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Bastão Acolchoado",
+        "preco": "1 T$",
+        "dano": "1d6",
+        "critico": "20",
+        "espaco": "1",
+        "tipo": "Esmagamento",
+        "descricao": "Um pedaço sólido de madeira, coberto por uma camada grossa de lã. O bastão acolchoado causa dano não-letal. ",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Lança",
+        "preco": "2 T$",
+        "dano": "1d6",
+        "critico": "20",
+        "espaco": "1",
+        "tipo": "Perfuração",
+        "descricao": "É qualquer arma feita com uma haste de madeira e ponta afiada, natural ou metálica. Por sua facilidade de fabricação, é muito comum entre diversas raças menos civilizadas. Uma lança também pode ser arremessada.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Maça",
+        "preco": "12 T$",
+        "dano": "1d8",
+        "critico": "20",
+        "espaco": "1",
+        "tipo": "Esmagamento",
+        "descricao": "Composta por um bastão metálico com um espaco cheio de protuberâncias na estremidade, a maça é muito usada por clérigos que fazem votos de não derramar sangue. De fato, um golpe de maça nem sempre derrama sangue, mas pode esmagar algum ossos.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Pique (2M)",
+        "preco": "2 T$",
+        "dano": "1d8",
+        "critico": "20",
+        "espaco": "2",
+        "tipo": "Perfuração",
+        "descricao": "É basicamente uma lança muito longa. Esta arma de haste é preferida por guardas medrosos que não querem ficar perto de seus inimigos",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Arco Curto (2M)",
+        "preco": "30 T$",
+        "dano": "1d6",
+        "critico": "20 (x3)",
+        "espaco": "2",
+        "tipo": "Perfuração",
+        "descricao": "Este arco bastante comum é próprio para caçadas, muito usado por povos selvagens ou caçadores — o tamanho pequeno é apropriado para manuseio em florestas e outros ambientes fechados. Exige as duas mãos",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Azagaia",
+        "preco": "1 T$",
+        "dano": "1d6",
+        "critico": "20",
+        "espaco": "1",
+        "tipo": "Perfuração",
+        "descricao": "É uma lança curta e delgada e usada como arma de arremesso por povos ou indivíduos caçadores. Também é conhecida como apenas zagaia.Em culturas mais civilizadas, ganhou o nome de javelin.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Besta Leve (2M)",
+        "preco": "35 T$",
+        "dano": "1d8",
+        "critico": "19",
+        "espaco": "2",
+        "tipo": "Perfuração",
+        "descricao": "Um arco montado sobre uma coronha de madeira com um gatilho, a besta leve é uma arma que dispara virotes com grande potência. Recarregar uma besta leve é uma ação de movimento. Exige as duas mãos.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
+        "nome": "Granada",
+        "preco": "50 T$",
+        "dano": "4d6",
+        "critico": "-",
+        "espaco": "1",
+        "tipo": "Fogo",
+        "descricao": "popular entre goblins, mas também empregada por outros usuários de pólvora, esta bomba rudimentar tem um pavio que deve ser aceso antes do uso (ação de movimento). Arremessar uma granada é um ataque de toque à distância. Qualquer criatura a até 3m do alvo sofre 4d6 pontos de dano (ou metade, se bem sucedido no teste de Reflexos contra o ataque).",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    // Armas
+    //  Marciais
+    {
+        "nome": "Cestus",
+        "preco": "5 T$",
+        "dano": "+1",
+        "critico": "-",
+        "espaco": "1",
+        "tipo": "Esmagamento",
+        "descricao": "Uma luva de couro com espinhos, usada por pugilistas e brigões de rua. O cestus fornece um bônus de +1 nas jogadas de dano com ataques desarmados. Esta arma não pode ser desarmada. ",
+        "categoria": "Armas",
+        "subcategoria": "Marciais"
+    },
+    {
+        "nome": "Escudo Leve",
+        "preco": "5 T$",
+        "dano": "1d4",
+        "critico": "20",
+        "espaco": "1",
+        "tipo": "Esmagamento",
+        "descricao": "Você pode usar em escudo leve como uma arma, mas perde seu bônus na CA até o próximo turno.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
     },
     {
         "nome": "",
         "preco": " T$",
         "dano": "",
         "critico": "20",
-        "peso": "kg",
+        "espaco": "kg",
         "tipo": "",
         "descricao": "",
         "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
-    },
-    {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "peso": "kg",
-        "tipo": "",
-        "descricao": "",
-        "categoria": "Armas",
-        "subcategoria": "Armas Simples"
+        "subcategoria": "Simples"
     },
     {
         "nome": "item2",
@@ -222,14 +204,14 @@
         "tipo": "item geral",
         "descricao": "Alguma descrição",
         "categoria": "Itens",
-        "subcategoria": "Geral"
+        "subcategoria": "Diversos"
     },
     {
         "nome": "item9",
         "tipo": "pocao de cura",
         "efeito": "Cura +20",
         "categoria": "Poções",
-        "subcategoria": "Vida"
+        "subcategoria": "Cura"
     },
     {
         "nome": "item10",
@@ -237,5 +219,77 @@
         "efeito": "Cura +20",
         "categoria": "Poções",
         "subcategoria": "Mana"
-    }
+    },
+    // Pocoes
+    //  Diversas
+    {
+        "nome": "Ácido",
+        "preco": "10 T$",
+        "dano": "2d4",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Ácido",
+        "descricao": "Um frasco de vidro contendo um ácido alquímico altamente corrosivo. Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se você acertar, o alvo sofre 2d4 pontos de dano de ácido, Se errar, ele sofre metade desse dano. ",
+        "categoria": "Poções",
+        "subcategoria": "Diversas"
+    },
+    {
+        "nome": "Água Benta",
+        "preco": "25 T$",
+        "dano": "2d6",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Especial",
+        "descricao": "Criada por clérigos e vendida em pequenos frascos, a água benta é uma poderosa arma contra mortosvivos e espíritos Malignos (mas é inofensiva contra outras criaturas). Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se acertar, o alvo sofre 2d6 pontos de dano. Se errar, ele sofre metade desse dano.",
+        "categoria": "Poções",
+        "subcategoria": "Diversas"
+    },
+    {
+        "nome": "Fogo Alquímico",
+        "preco": "10 T$",
+        "dano": "1d6",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Fogo",
+        "descricao": "É um frasco que contém uma substância grossa e pegajosa, e que entra em combustão ao entrar em contato com o ar. Você atira o frasco, fazendo um ataque de toque à distância (ataque oposto a um teste de Reflexos). Se você acertar, o alvo sofre 1d6 pontos de dano e pega fogo. Se errar, ele sofre metade desse dano e não pega fogo. Uma criatura em chamas sofre 1d6 pontos de dano no fim do seu próximo turno, a menos que apague as chamas (com uma ação completa).",
+        "categoria": "Poções",
+        "subcategoria": "Diversas"
+    },
+    // Itens
+    //  Municao
+    {
+        "nome": "Flecha (20 un)",
+        "preco": "1 T$",
+        "dano": "-",
+        "critico": "-",
+        "espaco": "1",
+        "tipo": "-",
+        "descricao": "São hastes de madeira geralmente com ponta metálica e penas para estabilizar seu vôo, costumam ser vendidas em aljavas com 20 unidades. Recarregar um arco com uma flecha é uma ação livre. ",
+        "categoria": "Itens",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Virote (10 un)",
+        "preco": "1 T$",
+        "dano": "-",
+        "critico": "-",
+        "espaco": "1",
+        "tipo": "-",
+        "descricao": "Pequenas setas de madeira que servem como munição para bestas.",
+        "categoria": "Itens",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Balas (10 un)",
+        "preco": "1 T$",
+        "dano": "-",
+        "critico": "-",
+        "espaco": "1",
+        "tipo": "-",
+        "descricao": "Pequenas balas esféricas de metal. Recarregar uma funda com uma bala é uma ação de movimento.",
+        "categoria": "Itens",
+        "subcategoria": "Munição"
+    },
+    // Itens
+    //  Diversos
 ]
