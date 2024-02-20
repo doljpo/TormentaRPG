@@ -140,18 +140,18 @@
         "tipo": "Esmagamento",
         "descricao": "Você pode usar em escudo leve como uma arma, mas perde seu bônus na CA até o próximo turno.",
         "categoria": "Armas",
-        "subcategoria": "Simples"
+        "subcategoria": "Marciais"
     },
     {
-        "nome": "",
-        "preco": " T$",
-        "dano": "",
-        "critico": "20",
-        "espaco": "",
-        "tipo": "",
-        "descricao": "",
+        "nome": "Machadinha",
+        "preco": "6 T$",
+        "dano": "1d6",
+        "critico": "20 (x3)",
+        "espaco": "1",
+        "tipo": "Corte",
+        "descricao": "Ferramenta útil para cortar madeira, e também inimigos. Uma machadinha pode ser arremessada.",
         "categoria": "Armas",
-        "subcategoria": "Simples"
+        "subcategoria": "Marciais"
     },
     {
         "nome": "Ácido",
