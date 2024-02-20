@@ -1,0 +1,35 @@
+[
+    {
+        "nome": "Ácido",
+        "preco": "10 T$",
+        "dano": "2d4",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Ácido",
+        "descricao": "Um frasco de vidro contendo um ácido alquímico altamente corrosivo. Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se você acertar, o alvo sofre 2d4 pontos de dano de ácido, Se errar, ele sofre metade desse dano. ",
+        "categoria": "Poções",
+        "subcategoria": "Especial"
+    },
+    {
+        "nome": "Água Benta",
+        "preco": "25 T$",
+        "dano": "2d6",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Especial",
+        "descricao": "Criada por clérigos e vendida em pequenos frascos, a água benta é uma poderosa arma contra mortosvivos e espíritos Malignos (mas é inofensiva contra outras criaturas). Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se acertar, o alvo sofre 2d6 pontos de dano. Se errar, ele sofre metade desse dano.",
+        "categoria": "Poções",
+        "subcategoria": "Especial"
+    },
+    {
+        "nome": "Fogo Alquímico",
+        "preco": "10 T$",
+        "dano": "1d6",
+        "critico": "-",
+        "espaco": "0,5",
+        "tipo": "Fogo",
+        "descricao": "É um frasco que contém uma substância grossa e pegajosa, e que entra em combustão ao entrar em contato com o ar. Você atira o frasco, fazendo um ataque de toque à distância (ataque oposto a um teste de Reflexos). Se você acertar, o alvo sofre 1d6 pontos de dano e pega fogo. Se errar, ele sofre metade desse dano e não pega fogo. Uma criatura em chamas sofre 1d6 pontos de dano no fim do seu próximo turno, a menos que apague as chamas (com uma ação completa).",
+        "categoria": "Poções",
+        "subcategoria": "Especial"
+    }
+]

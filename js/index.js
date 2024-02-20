@@ -58,10 +58,30 @@ Pocoes
 function filtrarItens() {
     var categoriaSelecionada = document.getElementById('categoria').value;
     var subcategoriaSelecionada = document.getElementById('subcategoria').value;
-    var equipamentosFiltrados = equips.filter(function (item) {
-        return item.categoria === categoriaSelecionada && item.subcategoria === subcategoriaSelecionada;
-    });
-    exibirItens(equipamentosFiltrados);
+    var itensFiltrados;
+
+    switch (categoriaSelecionada) {
+        case 'Armas':
+            itensFiltrados = armas;
+            break;
+        case 'Itens':
+            itensFiltrados = itens;
+            break;
+        case 'Poções':
+            itensFiltrados = pocoes;
+            break;
+        default:
+            console.error('Erro ao carregar lista de itens');
+            return;
+    }
+
+    if (subcategoriaSelecionada) {
+        itensFiltrados = itensFiltrados.filter(function (item) {
+            return item.subcategoria === subcategoriaSelecionada;
+        });
+    }
+
+    exibirItens(itensFiltrados);
 }
 
 function atualizarSubcategorias() {
@@ -76,9 +96,9 @@ function atualizarSubcategorias() {
     } else if (categoriaSelecionada === 'Escudos') {
         adicionarOpcoesSubcategoria(['Pequeno', 'Médio']);
     } else if (categoriaSelecionada === 'Itens') {
-        adicionarOpcoesSubcategoria(['Comida', 'Geral']);
+        adicionarOpcoesSubcategoria(['Comida', 'Geral', 'Munição']);
     } else if (categoriaSelecionada === 'Poções') {
-        adicionarOpcoesSubcategoria(['Vida', 'Mana']);
+        adicionarOpcoesSubcategoria(['Vida', 'Mana', 'Especial']);
     } else {
         subcategoriaSelect.style.display = 'none';
     }
@@ -127,11 +147,11 @@ function exibirItens(itens) {
     });
 }
 
-function carregarEquipamentos() {
-    return fetch('../itens/itens.json')
+function carregarItens(categoria) {
+    return fetch(`../itens/${categoria}.json`)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Erro ao carregar os dados dos equipamentos');
+                throw new Error(`Erro ao carregar ${categoria}`);
             }
             return response.json();
         })
@@ -140,13 +160,25 @@ function carregarEquipamentos() {
         });
 }
 
-equips = [];
+armas = [];
+pocoes = [];
+itens = [];
 
-carregarEquipamentos().then(equipamentos => {
-    equips = equipamentos;
-});
+Promise.all([
+    carregarItens('armas'),
+    carregarItens('pocoes'),
+    carregarItens('itens')
+])
+    .then(resultados => {
+        armas = resultados[0];
+        pocoes = resultados[1];
+        itens = resultados[2];
+    })
+    .catch(error => {
+        console.error('Erro ao carregar os dados:', error);
+    });
 
-document.addEventListener('DOMContentLoaded', carregarEquipamentos);
+document.addEventListener('DOMContentLoaded', carregarItens);
 
 var categoriaSelect = document.getElementById('categoria');
 if (categoriaSelect) {
