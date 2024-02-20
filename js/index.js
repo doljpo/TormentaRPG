@@ -10,6 +10,21 @@ Assim, um personagem
 com Força 2 pode carregar até 14 espaços sem penalidade, e até 28 espaços ficando sobrecarregado. Ele
 não pode carregar mais de 28 espaços de itens
 
+Conversao de kg em espaços:
+    < 1kg           == 0.5 espaço
+    >= 1kg < 5kg    == 1 espaço
+    >= 5kg < 10kg   == 2 espaços
+    >= 10kg < 15kg  == 3 espaços
+    >= 15kg < 20kg  == 4 espaços (e assim por diante, aumenta 1 espaço a cada 5kg)
+
+    Obs: moedas, a cada 1k de moedas, ocupa 1 espaço
+
+    armas de duas mãos ocupam no mínimo 2 espaços mas aumenta quando o peso passa dos 10kg, exemplo:
+        > um arco que pesa 0.5kg ocupa 2 espaços;
+        > um arco que pesa 4kg ocupa 2 espaços;
+        > um arco que pesa 8kg ocupa 2 espaços;
+        > um arco que pesa 12kg ocupa 3 espaços;
+
 Tipos de itens:
 
 Armas
@@ -55,7 +70,7 @@ function atualizarSubcategorias() {
     subcategoriaSelect.innerHTML = '<option value="">Selecione uma subcategoria</option>';
 
     if (categoriaSelecionada === 'Armas') {
-        adicionarOpcoesSubcategoria(['Simples']);
+        adicionarOpcoesSubcategoria(['Simples', 'Marciais']);
     } else if (categoriaSelecionada === 'Armaduras') {
         adicionarOpcoesSubcategoria(['Leve', 'Pesada']);
     } else if (categoriaSelecionada === 'Escudos') {
