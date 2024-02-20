@@ -1,6 +1,4 @@
 [
-    // Armas
-    //  Simples
     {
         "nome": "Adaga",
         "preco": "2 T$",
@@ -122,8 +120,6 @@
         "categoria": "Armas",
         "subcategoria": "Simples"
     },
-    // Armas
-    //  Marciais
     {
         "nome": "Cestus",
         "preco": "5 T$",
@@ -151,77 +147,12 @@
         "preco": " T$",
         "dano": "",
         "critico": "20",
-        "espaco": "kg",
+        "espaco": "",
         "tipo": "",
         "descricao": "",
         "categoria": "Armas",
         "subcategoria": "Simples"
     },
-    {
-        "nome": "item2",
-        "tipo": "Machado",
-        "dano": "1d6 + 2",
-        "categoria": "Armas",
-        "subcategoria": "Machado"
-    },
-    {
-        "nome": "item3",
-        "tipo": "armadura leve",
-        "defesa": "+2",
-        "categoria": "Armaduras",
-        "subcategoria": "Leve"
-    },
-    {
-        "nome": "item4",
-        "tipo": "armadura pesada",
-        "defesa": "+2",
-        "categoria": "Armaduras",
-        "subcategoria": "Pesada"
-    },
-    {
-        "nome": "item5",
-        "tipo": "escudo pequeno",
-        "defesa": "+1",
-        "categoria": "Escudos",
-        "subcategoria": "Pequeno"
-    },
-    {
-        "nome": "item6",
-        "tipo": "escudo medio",
-        "defesa": "+1",
-        "categoria": "Escudos",
-        "subcategoria": "Médio"
-    },
-    {
-        "nome": "item7",
-        "tipo": "item comida",
-        "descricao": "Alguma descrição",
-        "categoria": "Itens",
-        "subcategoria": "Comida"
-    },
-    {
-        "nome": "item8",
-        "tipo": "item geral",
-        "descricao": "Alguma descrição",
-        "categoria": "Itens",
-        "subcategoria": "Diversos"
-    },
-    {
-        "nome": "item9",
-        "tipo": "pocao de cura",
-        "efeito": "Cura +20",
-        "categoria": "Poções",
-        "subcategoria": "Cura"
-    },
-    {
-        "nome": "item10",
-        "tipo": "pocao de mana",
-        "efeito": "Cura +20",
-        "categoria": "Poções",
-        "subcategoria": "Mana"
-    },
-    // Pocoes
-    //  Diversas
     {
         "nome": "Ácido",
         "preco": "10 T$",
@@ -255,8 +186,6 @@
         "categoria": "Poções",
         "subcategoria": "Diversas"
     },
-    // Itens
-    //  Municao
     {
         "nome": "Flecha (20 un)",
         "preco": "1 T$",
@@ -289,7 +218,5 @@
         "descricao": "Pequenas balas esféricas de metal. Recarregar uma funda com uma bala é uma ação de movimento.",
         "categoria": "Itens",
         "subcategoria": "Munição"
-    },
-    // Itens
-    //  Diversos
+    }
 ]

@@ -55,7 +55,7 @@ function atualizarSubcategorias() {
     subcategoriaSelect.innerHTML = '<option value="">Selecione uma subcategoria</option>';
 
     if (categoriaSelecionada === 'Armas') {
-        adicionarOpcoesSubcategoria(['Armas Simples', 'Machado']);
+        adicionarOpcoesSubcategoria(['Simples']);
     } else if (categoriaSelecionada === 'Armaduras') {
         adicionarOpcoesSubcategoria(['Leve', 'Pesada']);
     } else if (categoriaSelecionada === 'Escudos') {
@@ -82,7 +82,7 @@ function adicionarOpcoesSubcategoria(subcategorias) {
 
 function exibirItens(itens) {
     var container = document.getElementById('equipamentos-container');
-    container.innerHTML = ''; // Limpa o conteúdo anterior
+    container.innerHTML = '';
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
@@ -92,17 +92,21 @@ function exibirItens(itens) {
         var cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title');
         cardTitle.textContent = item.nome;
-        var tipo = document.createElement('p');
-        tipo.classList.add('card-text');
-        tipo.innerHTML = '<strong>Tipo:</strong> ' + item.tipo;
         var dano = document.createElement('p');
         dano.classList.add('card-text');
-        dano.innerHTML = '<strong>Dano:</strong> ' + item.dano;
+        dano.innerHTML = '<strong>Dano:</strong> ' + item.dano + ' | <strong>Crítico:</strong> ' + item.critico;
+        var tipo = document.createElement('p');
+        tipo.classList.add('card-text');
+        tipo.innerHTML = '<strong>Tipo:</strong> ' + item.tipo + ' | <strong>Espaço:</strong> ' + item.espaco;
+        var preco = document.createElement('p');
+        preco.classList.add('card-text');
+        preco.innerHTML = '<strong>Preço:</strong> ' + item.preco;
         cardBody.appendChild(cardTitle);
-        cardBody.appendChild(tipo);
         if (item.dano) {
             cardBody.appendChild(dano);
         }
+        cardBody.appendChild(tipo);
+        cardBody.appendChild(preco);
         card.appendChild(cardBody);
         container.appendChild(card);
     });
