@@ -1,3 +1,24 @@
+.fz-bigger {
+    font-size: 1.25em;
+}
+
+.card-body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.float-right {
+    float: right;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
