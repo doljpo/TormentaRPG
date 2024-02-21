@@ -24,6 +24,18 @@
         "subcategoria": "Simples"
     },
     {
+        "nome": "Funda",
+        "preco": "1 T$",
+        "dano": "1d4",
+        "critico": "",
+        "alcance": "15m",
+        "espaco": "0,5",
+        "tipo": "Esmagamento",
+        "descricao": "Podendo ser feita com uma simples tira de couro, é usada para arremessar balas de metal. Na falta de munição adequada, uma funda também pode disparar pedras comuns, mas o dano é reduzido para 1d3. Colocar uma bala em uma funda é uma ação de movimento. Ao contrário de outras armas de disparo, você aplica seu modificador de Força a jogadas de dano com uma funda.",
+        "categoria": "Armas",
+        "subcategoria": "Simples"
+    },
+    {
         "nome": "Manopla",
         "preco": "5 T$",
         "dano": "1d4",
