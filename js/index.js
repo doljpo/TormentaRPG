@@ -114,12 +114,33 @@ function carregarItens(categoria) {
         });
 }
 
+var subcategoriaSelect = document.getElementById('subcategoria');
+subcategoriaSelect.disabled = true;
+
+const botaoFiltrar = document.getElementById('botao-filtrar');
+botaoFiltrar.disabled = true;
+
+const mensagem = document.getElementById('mensagem');
+
 var categoriaSelect = document.getElementById('categoria');
 if (categoriaSelect) {
-    categoriaSelect.addEventListener('change', atualizarSubcategorias);
+    categoriaSelect.addEventListener('change', function () {
+        atualizarSubcategorias();
+
+        if (categoriaSelect.value != '') {
+            subcategoriaSelect.disabled = false;
+            botaoFiltrar.disabled = false;
+        } else {
+            subcategoriaSelect.disabled = true;
+            botaoFiltrar.disabled = true;
+            mensagem.style.display = 'block';
+        }
+    });
 }
 
 function filtrarItens() {
+    mensagem.style.display = 'none';
+
     var categoriaSelecionada = document.getElementById('categoria').value;
     var subcategoriaSelecionada = document.getElementById('subcategoria').value;
     var itensFiltrados;
@@ -157,7 +178,7 @@ function filtrarItens() {
 function atualizarSubcategorias() {
     var categoriaSelecionada = document.getElementById('categoria').value;
     var subcategoriaSelect = document.getElementById('subcategoria');
-    subcategoriaSelect.innerHTML = '<option value="">Selecione uma subcategoria</option>';
+    subcategoriaSelect.innerHTML = '<option value="">Todas</option>';
 
     if (categoriaSelecionada === 'Armas') {
         adicionarOpcoesSubcategoria(['Exóticas', 'Marciais', 'Simples', 'Tecnológicas']);
@@ -170,7 +191,8 @@ function atualizarSubcategorias() {
     } else if (categoriaSelecionada === 'Poções') {
         adicionarOpcoesSubcategoria(['Vida', 'Mana', 'Especial']);
     } else {
-        subcategoriaSelect.style.display = 'none';
+        subcategoriaSelect.disabled = true;
+        limparLista();
     }
 }
 
@@ -205,7 +227,7 @@ function exibirItens(itens) {
             console.log('console.log(listarPocoes);');
             break;
         default:
-            console.error('Erro ao carregar lista de itens');
+            limparLista();
             return;
     }
 }
@@ -345,4 +367,9 @@ function listarEscudos(itens) {
         card.appendChild(cardBody);
         container.appendChild(card);
     });
+}
+
+function limparLista() {
+    var container = document.getElementById('equipamentos-container');
+    container.innerHTML = '';
 }

@@ -10,22 +10,26 @@
 
 <body>
     <h1>Comércio</h1>
-    <select id="categoria">
-        <option value="">Selecione uma categoria</option>
-        <option value="Armas">Armas</option>
-        <option value="Armaduras">Armaduras</option>
-        <option value="Escudos">Escudos</option>
-        <option value="Itens">Itens</option>
-        <option value="Poções">Poções</option>
-    </select>
+    <div class="flex">
+        <select id="categoria" class="mb-05">
+            <option value="">Selecione uma categoria</option>
+            <option value="Armas">Armas</option>
+            <option value="Armaduras">Armaduras</option>
+            <option value="Escudos">Escudos</option>
+            <option value="Itens">Itens</option>
+            <option value="Poções">Poções</option>
+        </select>
 
-    <select id="subcategoria">
-        <option value="">Todas</option>
-    </select>
+        <select id="subcategoria" class="mb-05">
+            <option value="">Todas</option>
+        </select>
 
-    <button class="mb-1" onclick="filtrarItens()">Filtrar</button>
-
+        <button id="botao-filtrar" class="mb-1" onclick="filtrarItens()">Filtrar</button>
+    </div>
     <div id="equipamentos-container" class="card-container"></div>
+
+    <div id="mensagem" class="mensagem">Escolha a categoria para iniciar</div>
+
     <script src="./js/index.js"></script>
 </body>
 
