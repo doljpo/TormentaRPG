@@ -52,10 +52,9 @@ Armaduras
     Pesadas
 
 Escudos
-    Pequenos
-    Medios
-    Grandes
-    De Corpo
+    Leve
+    Pesado
+    Corpo
 
 Itens
     Munição
@@ -68,6 +67,57 @@ Pocoes
     Diversa
 */
 
+
+const TipoItem = {
+    ARMAS: 0,
+    ARMADURAS: 1,
+    ESCUDOS: 2,
+    ITENS: 3,
+    POCOES: 4
+};
+
+armas = [];
+armaduras = [];
+escudos = [];
+itens = [];
+pocoes = [];
+
+Promise.all([
+    carregarItens('armas'),
+    carregarItens('armaduras'),
+    carregarItens('escudos'),
+    carregarItens('pocoes'),
+    carregarItens('itens')
+])
+    .then(resultados => {
+        armas = resultados[TipoItem.ARMAS];
+        armaduras = resultados[TipoItem.ARMADURAS];
+        escudos = resultados[TipoItem.ESCUDOS];
+        itens = resultados[TipoItem.ITENS];
+        pocoes = resultados[TipoItem.POCOES];
+    })
+    .catch(error => {
+        console.error('Erro ao carregar os dados:', error);
+    });
+
+
+function carregarItens(categoria) {
+    return fetch(`../itens/${categoria}.json`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Erro ao carregar ${categoria}`);
+            }
+            return response.json();
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+}
+
+var categoriaSelect = document.getElementById('categoria');
+if (categoriaSelect) {
+    categoriaSelect.addEventListener('change', atualizarSubcategorias);
+}
 
 function filtrarItens() {
     var categoriaSelecionada = document.getElementById('categoria').value;
@@ -114,7 +164,7 @@ function atualizarSubcategorias() {
     } else if (categoriaSelecionada === 'Armaduras') {
         adicionarOpcoesSubcategoria(['Leves', 'Pesadas']);
     } else if (categoriaSelecionada === 'Escudos') {
-        adicionarOpcoesSubcategoria(['Pequeno', 'Médio']);
+        adicionarOpcoesSubcategoria(['Leves', 'Pesados', 'De Corpo']);
     } else if (categoriaSelecionada === 'Itens') {
         adicionarOpcoesSubcategoria(['Comida', 'Geral', 'Munição']);
     } else if (categoriaSelecionada === 'Poções') {
@@ -146,7 +196,7 @@ function exibirItens(itens) {
             listarArmaduras(itens);
             break;
         case 'Escudos':
-            console.log('listarEscudos(itens);');
+            listarEscudos(itens);
             break;
         case 'Itens':
             console.log('listarItens(itens);');
@@ -262,54 +312,37 @@ function listarArmaduras(itens) {
     });
 }
 
-function carregarItens(categoria) {
-    return fetch(`../itens/${categoria}.json`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erro ao carregar ${categoria}`);
-            }
-            return response.json();
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
-}
+function listarEscudos(itens) {
 
-const TipoItem = {
-    ARMAS: 0,
-    ARMADURAS: 1,
-    ESCUDOS: 2,
-    ITENS: 3,
-    POCOES: 4
-};
+    var container = document.getElementById('equipamentos-container');
+    container.innerHTML = '';
 
-armas = [];
-armaduras = [];
-escudos = [];
-itens = [];
-pocoes = [];
+    itens.forEach(function (item) {
+        var card = document.createElement('div');
+        card.classList.add('card');
+        var cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        // Nome
+        var nome = document.createElement('h5');
+        nome.classList.add('card-title');
+        nome.textContent = item.nome;
+        // Defesa
+        var defesa = document.createElement('span');
+        defesa.innerHTML = '<strong>Defesa:</strong> ' + item.defesa;
+        // Penalidade
+        var penalidade = document.createElement('span');
+        penalidade.classList.add('float-right');
+        penalidade.innerHTML = '<strong>Penalidade:</strong> ' + item.penalidade;
+        // Preço
+        var preco = document.createElement('p');
+        preco.innerHTML = '<strong>Preço:</strong> ' + item.preco;
 
-Promise.all([
-    carregarItens('armas'),
-    carregarItens('armaduras'),
-    carregarItens('escudos'),
-    carregarItens('pocoes'),
-    carregarItens('itens')
-])
-    .then(resultados => {
-        armas = resultados[TipoItem.ARMAS];
-        armaduras = resultados[TipoItem.ARMADURAS];
-        escudos = resultados[TipoItem.ESCUDOS];
-        itens = resultados[TipoItem.ITENS];
-        pocoes = resultados[TipoItem.POCOES];
-    })
-    .catch(error => {
-        console.error('Erro ao carregar os dados:', error);
+        cardBody.appendChild(nome);
+        cardBody.appendChild(defesa);
+        cardBody.appendChild(penalidade);
+        cardBody.appendChild(preco);
+
+        card.appendChild(cardBody);
+        container.appendChild(card);
     });
-
-document.addEventListener('DOMContentLoaded', carregarItens);
-
-var categoriaSelect = document.getElementById('categoria');
-if (categoriaSelect) {
-    categoriaSelect.addEventListener('change', atualizarSubcategorias);
 }

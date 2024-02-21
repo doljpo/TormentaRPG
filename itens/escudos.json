@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "nome": "Escudo Leve",
+        "preco": "500 T$",
+        "defesa": "+5",
+        "penalidade": "-2",
+        "espaco": "5",
+        "descricao": "",
+        "categoria": "Escudos",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Escudo Pesado",
+        "preco": "500 T$",
+        "defesa": "+5",
+        "penalidade": "-2",
+        "espaco": "5",
+        "descricao": "",
+        "categoria": "Escudos",
+        "subcategoria": "Pesados"
+    },
+    {
+        "nome": "Escudo De Corpo",
+        "preco": "500 T$",
+        "defesa": "+5",
+        "penalidade": "-2",
+        "espaco": "5",
+        "descricao": "",
+        "categoria": "Escudos",
+        "subcategoria": "De Corpo"
+    }
+]
