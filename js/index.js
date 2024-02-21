@@ -25,6 +25,21 @@ Conversao de kg em espaços:
         > um arco que pesa 8kg ocupa 2 espaços;
         > um arco que pesa 12kg ocupa 3 espaços;
 
+
+Regras de armaduras:
+
+Penalidade: 
+    Quando o jogador não possui proficiência com o tipo de armadura ou escudo, aplica penalidades em todos os testes de Força e Destreza.
+
+    Independente de ter ou não proficiência, todos personagens usando armaduras recebem a penalidade da armadura nos seguintes testes:
+    
+        Acrobacia,
+        Furtividade
+        Ladinagem
+        Atletismo (para natação)
+
+        >> Todos personagens possuem habilidade de usar armaduras leves
+
 Tipos de itens:
 
 Armas
@@ -34,7 +49,6 @@ Armas
 
 Armaduras
     Leves
-    Medias
     Pesadas
 
 Escudos
@@ -64,6 +78,12 @@ function filtrarItens() {
         case 'Armas':
             itensFiltrados = armas;
             break;
+        case 'Armaduras':
+            itensFiltrados = armaduras;
+            break;
+        case 'Escudos':
+            itensFiltrados = escudos;
+            break;
         case 'Itens':
             itensFiltrados = itens;
             break;
@@ -92,7 +112,7 @@ function atualizarSubcategorias() {
     if (categoriaSelecionada === 'Armas') {
         adicionarOpcoesSubcategoria(['Exóticas', 'Marciais', 'Simples', 'Tecnológicas']);
     } else if (categoriaSelecionada === 'Armaduras') {
-        adicionarOpcoesSubcategoria(['Leve', 'Pesada']);
+        adicionarOpcoesSubcategoria(['Leves', 'Pesadas']);
     } else if (categoriaSelecionada === 'Escudos') {
         adicionarOpcoesSubcategoria(['Pequeno', 'Médio']);
     } else if (categoriaSelecionada === 'Itens') {
@@ -116,6 +136,32 @@ function adicionarOpcoesSubcategoria(subcategorias) {
 }
 
 function exibirItens(itens) {
+    const categoria = itens[0].categoria;
+
+    switch (categoria) {
+        case 'Armas':
+            listarArmas(itens);
+            break;
+        case 'Armaduras':
+            listarArmaduras(itens);
+            break;
+        case 'Escudos':
+            console.log('listarEscudos(itens);');
+            break;
+        case 'Itens':
+            console.log('listarItens(itens);');
+            break;
+        case 'Poções':
+            console.log('console.log(listarPocoes);');
+            break;
+        default:
+            console.error('Erro ao carregar lista de itens');
+            return;
+    }
+}
+
+function listarArmas(itens) {
+
     var container = document.getElementById('equipamentos-container');
     container.innerHTML = '';
 
@@ -124,24 +170,93 @@ function exibirItens(itens) {
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
-        var cardTitle = document.createElement('h5');
-        cardTitle.classList.add('card-title');
-        cardTitle.textContent = item.nome;
-        var dano = document.createElement('p');
-        dano.classList.add('card-text');
-        dano.innerHTML = '<strong>Dano:</strong> ' + item.dano + ' | <strong>Crítico:</strong> ' + item.critico;
-        var tipo = document.createElement('p');
-        tipo.classList.add('card-text');
-        tipo.innerHTML = '<strong>Tipo:</strong> ' + item.tipo + ' | <strong>Espaço:</strong> ' + item.espaco;
+
+        // Nome
+        var nome = document.createElement('span');
+        nome.classList.add('fz-bigger');
+        nome.innerHTML = '<strong>' + item.nome + '</strong>';
+
+        // Preço
+        var preco = document.createElement('span');
+        preco.classList.add('float-right');
+        preco.innerHTML = '<strong>Preço:</strong> ';
+        var precoValor = document.createElement('span');
+        precoValor.innerHTML = item.preco;
+        preco.appendChild(precoValor);
+
+        var cabecalho = document.createElement('div');
+        cabecalho.classList.add('mt-1');
+        cabecalho.classList.add('mb-1');
+        cabecalho.appendChild(nome);
+        cabecalho.appendChild(preco);
+
+        // Dano
+        var dano = document.createElement('span');
+        dano.innerHTML = '<strong>Dano:</strong> ' + item.dano;
+        // Crítico
+        var critico = document.createElement('span');
+        critico.classList.add('float-right');
+        critico.innerHTML = '<strong>Crítico:</strong> ' + item.critico;
+
+        var danoCritico = document.createElement('div');
+        danoCritico.classList.add('mb-1');
+        danoCritico.appendChild(dano);
+        if (item.critico)
+            danoCritico.appendChild(critico);
+
+        // Tipo
+        var tipo = document.createElement('span');
+        tipo.innerHTML = '<strong>Tipo:</strong> ' + item.tipo;
+        // Alcance
+        var alcance = document.createElement('span');
+        alcance.classList.add('float-right');
+        alcance.innerHTML = '<strong>Alcance:</strong> ' + item.alcance;
+
+        var tipoAlcance = document.createElement('div');
+        tipoAlcance.classList.add('mb-1');
+        tipoAlcance.appendChild(tipo);
+        if (item.alcance)
+            tipoAlcance.appendChild(alcance);
+
+        cardBody.appendChild(cabecalho);
+        cardBody.appendChild(danoCritico);
+        cardBody.appendChild(tipoAlcance);
+
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    });
+}
+
+function listarArmaduras(itens) {
+
+    var container = document.getElementById('equipamentos-container');
+    container.innerHTML = '';
+
+    itens.forEach(function (item) {
+        var card = document.createElement('div');
+        card.classList.add('card');
+        var cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+        // Nome
+        var nome = document.createElement('h5');
+        nome.classList.add('card-title');
+        nome.textContent = item.nome;
+        // Defesa
+        var defesa = document.createElement('span');
+        defesa.innerHTML = '<strong>Defesa:</strong> ' + item.defesa;
+        // Penalidade
+        var penalidade = document.createElement('span');
+        penalidade.classList.add('float-right');
+        penalidade.innerHTML = '<strong>Penalidade:</strong> ' + item.penalidade;
+        // Preço
         var preco = document.createElement('p');
-        preco.classList.add('card-text');
         preco.innerHTML = '<strong>Preço:</strong> ' + item.preco;
-        cardBody.appendChild(cardTitle);
-        if (item.dano) {
-            cardBody.appendChild(dano);
-        }
-        cardBody.appendChild(tipo);
+
+        cardBody.appendChild(nome);
+        cardBody.appendChild(defesa);
+        cardBody.appendChild(penalidade);
         cardBody.appendChild(preco);
+
         card.appendChild(cardBody);
         container.appendChild(card);
     });
@@ -160,19 +275,33 @@ function carregarItens(categoria) {
         });
 }
 
+const TipoItem = {
+    ARMAS: 0,
+    ARMADURAS: 1,
+    ESCUDOS: 2,
+    ITENS: 3,
+    POCOES: 4
+};
+
 armas = [];
-pocoes = [];
+armaduras = [];
+escudos = [];
 itens = [];
+pocoes = [];
 
 Promise.all([
     carregarItens('armas'),
+    carregarItens('armaduras'),
+    carregarItens('escudos'),
     carregarItens('pocoes'),
     carregarItens('itens')
 ])
     .then(resultados => {
-        armas = resultados[0];
-        pocoes = resultados[1];
-        itens = resultados[2];
+        armas = resultados[TipoItem.ARMAS];
+        armaduras = resultados[TipoItem.ARMADURAS];
+        escudos = resultados[TipoItem.ESCUDOS];
+        itens = resultados[TipoItem.ITENS];
+        pocoes = resultados[TipoItem.POCOES];
     })
     .catch(error => {
         console.error('Erro ao carregar os dados:', error);

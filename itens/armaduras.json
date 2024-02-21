@@ -1,1 +1,112 @@
-[]
+[
+    {
+        "nome": "Armadura acolchoada",
+        "preco": "5 T$",
+        "defesa": "+1",
+        "penalidade": "0",
+        "espaco": "2",
+        "descricao": "Composta por várias camadas de tecido sobrepostas. É a armadura mais leve, mas também é a que oferece menos proteção.",
+        "categoria": "Armaduras",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Armadura de couro",
+        "preco": "20 T$",
+        "defesa": "+2",
+        "penalidade": "0",
+        "espaco": "2",
+        "descricao": "O peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido enquanto as demais partes são feitas de couro flexível.",
+        "categoria": "Armaduras",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Armadura de couro batido",
+        "preco": "35 T$",
+        "defesa": "+3",
+        "penalidade": "-1",
+        "espaco": "2",
+        "descricao": "Versão mais pesada da armadura de couro, reforçada com rebites de metal. ",
+        "categoria": "Armaduras",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Gibão de peles",
+        "preco": "25 T$",
+        "defesa": "+4",
+        "penalidade": "-3",
+        "espaco": "3",
+        "descricao": "Usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais.",
+        "categoria": "Armaduras",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Couraça de Bronze",
+        "preco": "500 T$",
+        "defesa": "+4",
+        "penalidade": "-4",
+        "espaco": "3",
+        "descricao": "O bronze não é tão resistente quanto o aço, mas é mais maleável, e pode ser esculpido com desenhos complexos.Isso faz com que seja popular entre nobres e oficiais. A couraça de bronze fornece um bônus de +2 nos testes de Diplomacia",
+        "categoria": "Armaduras",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Brunea",
+        "preco": "50 T$",
+        "defesa": "+5",
+        "penalidade": "-2",
+        "espaco": "5",
+        "descricao": "Colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe.",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesada"
+    },
+    {
+        "nome": "Cota de malha",
+        "preco": "150 T$",
+        "defesa": "+6",
+        "penalidade": "-2",
+        "espaco": "4",
+        "descricao": "Longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos.",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesadas"
+    },
+    {
+        "nome": "Loriga segmentada",
+        "preco": "250 T$",
+        "defesa": "+7",
+        "penalidade": "-3",
+        "espaco": "4",
+        "descricao": "Composta de tiras horizontais de metal, esta armadura é pesada e resistente. Peça muito utilizada por legionários minotauros.",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesadas"
+    },
+    {
+        "nome": "Meia-armadura",
+        "preco": "600 T$",
+        "defesa": "+8",
+        "penalidade": "-4",
+        "espaco": "5",
+        "descricao": "Combinação de cota de malha e placas de metal posicionadas sobre as áreas vitais.",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesadas"
+    },
+    {
+        "nome": "O-Yoroi",
+        "preco": "2.000 T$",
+        "defesa": "+9",
+        "penalidade": "-4",
+        "espaco": "5",
+        "descricao": "Usada pelos samurais, esta armadura é formada por pequenas placas metálicas unidas por nós de couro colorido. Inclui o kabuto, um elmo com uma máscara metálica.",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesadas"
+    },
+    {
+        "nome": "Armadura completa",
+        "preco": "3.000 T$",
+        "defesa": "+10",
+        "penalidade": "-5",
+        "espaco": "5",
+        "descricao": "A mais forte e pesada, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e um colete acolchoado para ser usado sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra 500 PO para adaptar uma armadura completa a um novo usuário",
+        "categoria": "Armaduras",
+        "subcategoria": "Pesadas"
+    }
+]
