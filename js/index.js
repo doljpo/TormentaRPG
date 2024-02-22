@@ -65,6 +65,28 @@ Pocoes
     Cura
     Mana
     Diversa
+
+
+    Itens e materiais mágicos:
+
+    São muito raros, podem ser pedidos a um ferreiro ou mago fazer, mas n eh qualquer um que conseguiria fazer.
+    Geralmente sao encontrados.
+
+    Métodos para a fabricação de itens mágicos são quase desconhecidos nos dias de hoje. Uns poucos arquimagos e acadêmicos sabem como produzi-los — mas a maioria foi forjada no
+    passado, por magos lendários, ou pelos próprios deuses. Além
+    disso, fabricar esses itens é trabalho duro, executado por artífi ces
+    que passam a vida em laboratórios, ofi cinas e torres — e não por
+    heróis exploradores de masmorras.
+
+    Um personagem pode usar tantas armas quanto puder empunhar, e mais quatro itens mágicos entre armaduras, escudos e acessórios. Por exemplo, um personagem pode usar uma armadura
+    mágica, um escudo mágico e dois acessórios, como um anel e um par
+    de botas. Se usar um quinto item mágico, ele não terá efeito algum,
+    a menos que o usuário remova um dos outros. Poções, pergaminhos,
+    varinhas e cajados não contam nesse limite.
+
+    Bônus de itens mágicos acumulam com bônus de outras fontes
+    (talentos, magias...), mas não entre si. Então, usar dois anéis de
+    proteção +2 vai fornecer apenas +2 na classe de armadura, não +4.
 */
 
 
