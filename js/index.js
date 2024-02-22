@@ -203,13 +203,13 @@ function atualizarSubcategorias() {
     subcategoriaSelect.innerHTML = '<option value="">Todas</option>';
 
     if (categoriaSelecionada === 'Armas') {
-        adicionarOpcoesSubcategoria(['Exóticas', 'Marciais', 'Simples', 'Tecnológicas']);
+        adicionarOpcoesSubcategoria(['Exóticas', 'Marciais', 'Simples', 'Tecnológicas', 'Munição']);
     } else if (categoriaSelecionada === 'Armaduras') {
         adicionarOpcoesSubcategoria(['Leves', 'Pesadas']);
     } else if (categoriaSelecionada === 'Escudos') {
         adicionarOpcoesSubcategoria(['Leves', 'Pesados', 'De Corpo']);
     } else if (categoriaSelecionada === 'Itens') {
-        adicionarOpcoesSubcategoria(['Comida', 'Geral', 'Munição']);
+        adicionarOpcoesSubcategoria(['Comida', 'Geral']);
     } else if (categoriaSelecionada === 'Poções') {
         adicionarOpcoesSubcategoria(['Vida', 'Mana', 'Especial']);
     } else {

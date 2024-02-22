@@ -982,5 +982,82 @@
         "descricao": "Este mosquete tem tambor e cano mais grossos, concentrando a força do tiro em um alvo mais próximo. Consequentemente, tem alcance menor, mas causa mais dano.",
         "categoria": "Armas",
         "subcategoria": "Tecnológicas"
+    },
+    {
+        "nome": "Flecha - Arco (20 un)",
+        "preco": "1 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "São hastes de madeira geralmente com ponta metálica e penas para estabilizar seu vôo, costumam ser vendidas em aljavas com 20 unidades. Recarregar um arco com uma flecha é uma ação livre. ",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Virote - Besta (10 un)",
+        "preco": "1 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Pequenas setas de madeira que servem como munição para bestas.",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Balas - Funda (10 un)",
+        "preco": "1 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Pequenas balas esféricas de metal. Recarregar uma funda com uma bala é uma ação de movimento.",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Munição - Bazuca (1 un)",
+        "preco": "100 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Munição para bazucas",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Munição - Pistola (10 un)",
+        "preco": "1 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Munição para pistolas",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Munição - Mosquete (10 un)",
+        "preco": "50 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Munição para mosquete",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
+    },
+    {
+        "nome": "Munição - Pistola (10 un)",
+        "preco": "35 T$",
+        "dano": "",
+        "critico": "",
+        "espaco": "1",
+        "tipo": "",
+        "descricao": "Munição para pistola",
+        "categoria": "Armas",
+        "subcategoria": "Munição"
     }
 ]
