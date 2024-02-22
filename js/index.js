@@ -209,7 +209,7 @@ function atualizarSubcategorias() {
     } else if (categoriaSelecionada === 'Escudos') {
         adicionarOpcoesSubcategoria(['Leves', 'Pesados', 'De Corpo']);
     } else if (categoriaSelecionada === 'Itens') {
-        adicionarOpcoesSubcategoria(['Comida', 'Geral']);
+        adicionarOpcoesSubcategoria(['Equipamento de Aventura', 'Esotéricos', 'Ferramentas', 'Vestuário']);
     } else if (categoriaSelecionada === 'Poções') {
         adicionarOpcoesSubcategoria(['Vida', 'Mana', 'Especial']);
     } else {

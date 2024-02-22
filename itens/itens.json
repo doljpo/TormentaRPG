@@ -1,68 +1,458 @@
 [
     {
-        "nome": "Flecha - Arco (20 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Algemas",
+        "preco": "75 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "São hastes de madeira geralmente com ponta metálica e penas para estabilizar seu vôo, costumam ser vendidas em aljavas com 20 unidades. Recarregar um arco com uma flecha é uma ação livre. ",
+        "descricao": "Um par de algemas para criaturas Médias. Prender uma criatura que não esteja indefesa exige empunhar a algema, agarrar o alvo e vencer um novo teste de agarrar contra ela. Você pode prender os dois pulsos da pessoa (–5 em testes que exijam o uso das mãos, impede conjuração) ou um dos pulsos dela em um objeto imóvel adjacente, caso haja, para impedir que ela se mova. Escapar das algemas exige uma ação completa e um teste de Acrobacia contra CD 30 ou de Força contra CD 25 — ou ter as chaves...",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
     },
     {
-        "nome": "Virote - Besta (10 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Arpéu",
+        "preco": "25 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "Pequenas setas de madeira que servem como munição para bestas.",
+        "descricao": "Um gancho de aço amarrado na ponta de uma corda para se fixar em muros, janelas, parapeitos de prédios... Prender um arpéu exige um teste de Pontaria (CD 15). Subir um muro com a ajuda de uma corda fornece +5 no teste de Atletismo.",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
     },
     {
-        "nome": "Balas - Funda (10 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Bandoleira de poções",
+        "preco": "100 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "Pequenas balas esféricas de metal. Recarregar uma funda com uma bala é uma ação de movimento.",
+        "descricao": "Um cinto de couro com bolsos que comportam pequenos frascos. Se você estiver vestindo uma bandoleira, pode sacar itens alquímicos e poções como uma ação livre. Aumenta em 3 espaços para poções e itens alquímicos.",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
     },
     {
-        "nome": "Munição - Bazuca (1 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Barraca",
+        "preco": "50 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "Munição para bazucas",
+        "descricao": "Esta barraca de lona conta como um saco de dormir para duas pessoas e fornece +2 em testes de Sobrevivência para acampar.",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
     },
     {
-        "nome": "Munição - Pistola (10 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Corda",
+        "preco": "5 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "Munição para pistolas",
+        "descricao": "Um rolo com 10 metros de corda de cânhamo, o mesmo tipo usado em navios. Possui diversas utilidades: pode ajudar a descer um buraco ou muro (+5 em testes de Atletismo nessas situações), amarrar pessoas etc. Dar um nó firme ou especial (por exemplo, capaz de deslizar, se desfazer com um puxão etc.) exige um teste de Destreza (CD 15). Arrebentar a corda exige 2 pontos de dano de corte ou uma ação padrão e um teste de Força (CD 20).",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
     },
     {
-        "nome": "Munição - Mosquete (1 un)",
-        "preco": "1 T$",
-        "dano": "",
-        "critico": "",
+        "nome": "Espelho",
+        "preco": "10 T$",
         "espaco": "1",
-        "tipo": "",
-        "descricao": "Munição para mosquete",
+        "descricao": "Este pequeno espelho possui diversas utilidades: observar cantos, fazer sinais de luz e, claro, garantir que você esteja apresentável",
         "categoria": "Itens",
-        "subcategoria": "Munição"
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Lampião",
+        "preco": "35 T$",
+        "espaco": "1",
+        "descricao": "Um cilindro com uma alça e duas portinholas. Uma chama alimentada por óleo é acesa dentro do cilindro e uma das portinholas aberta deixa a luz sair. Acender um lampião é uma ação padrão e sua luz ilumina um raio com 15m. Carregar um lampião com óleo é uma ação padrão e ele dura uma cena",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Mochila de Aventureiro",
+        "preco": "250 T$",
+        "espaco": "1",
+        "descricao": "Feita de couro resistente, esta mochila é repleta de bolsos para prender equipamento. Vestir uma mochila de aventureiro aumenta sua capacidade de carga em 2 espaços",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Organizador de pergaminhos",
+        "preco": "125 T$",
+        "espaco": "1",
+        "descricao": "Um estojo de madeira ou couro rígido. Se você estiver vestindo um organizador de pergaminhos, pode sacar pergaminhos como uma ação livre. Aumenta em 5 espaços para pergaminhos",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Pé de cabra",
+        "preco": "10 T$",
+        "espaco": "1",
+        "descricao": "Esta barra de ferro fornece +5 em testes de Força para abrir portas, janelas e baús fechados. Um pé de cabra pode ser usado como arma, com as estatísticas de uma clava",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Saco de dormir",
+        "preco": "5 T$",
+        "espaco": "1",
+        "descricao": "Um colchão com uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite. Dormir ao relento sem um acampamento e um saco de dormir diminui sua recuperação de PV e PM",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Símbolo sagrado",
+        "preco": "25 T$",
+        "espaco": "1",
+        "descricao": "Um medalhão de madeira ou metal com o símbolo de uma divindade. Se você estiver vestindo (normalmente com uma corrente ao redor do pescoço) ou empunhando o símbolo sagrado de um deus do qual é devoto, recebe +1 em testes de resistência.",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Tocha",
+        "preco": "5 T$",
+        "espaco": "1",
+        "descricao": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina). Acender uma tocha é uma ação padrão. Ela ilumina um raio de 9m e dura uma cena. Pode ser usada como uma arma simples leve (dano 1d4 de impacto mais 1 de fogo, crítico x2).",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Vara de madeira (3m)",
+        "preco": "1 T$",
+        "espaco": "1",
+        "descricao": "Uma haste com 3m de comprimento. Útil para alcançar pontos distantes, mas frágil demais para servir como arma.",
+        "categoria": "Itens",
+        "subcategoria": "Equipamento de Aventura"
+    },
+    {
+        "nome": "Alaúde élfico",
+        "preco": "300 T$",
+        "espaco": "1",
+        "descricao": "Feito com madeira de alta qualidade e manufatura delicada, este alaúde gera notas vívidas e emocionantes. Enquanto empunha este item, você pode usar a habilidade Inspiração como uma ação de movimento. Conta como um instrumento musical.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Coleção de livros",
+        "preco": "75 T$",
+        "espaco": "1",
+        "descricao": "Uma pequena coleção de tomos e tratados sobre um assunto. Fornece +1 em Conhecimento, Guerra, Misticismo, Nobreza ou Religião (definido quando o item é comprado ou fabricado).",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Equipamento de viagem",
+        "preco": "10 T$",
+        "espaco": "1",
+        "descricao": "Um saco de lona contendo instrumentos úteis para sobreviver nos ermos, como pederneira (pedra para fazer fogo), panelas e talheres para cozinhar, anzól e linha para pescar e uma pequena pá. Um personagem sem este item sofre –5 em testes de Sobrevivência para fazer um acampamento. Não inclui saco de dormir ou barraca.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Estojo de disfarces",
+        "preco": "50 T$",
+        "espaco": "1",
+        "descricao": "Um conjunto de cosméticos, tintas para cabelo e algumas próteses simples (como bigodes e narizes falsos). Um personagem sem este item sofre –5 em testes de Enganação para disfarce.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Flauta mística",
+        "preco": "150 T$",
+        "espaco": "1",
+        "descricao": "Um instrumento delicado, repleto de runas e pequenas gemas místicas. Um bardo que empunhe este item aumenta a CD para resistir às magias lançadas por ele em +1. Conta como um instrumento musical.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Gazua",
+        "preco": "5 T$",
+        "espaco": "1",
+        "descricao": "Uma barra fina de ferro, com a ponta torta ou em forma de gancho. Um personagem sem este item sofre –5 em testes de Ladinagem para abrir fechaduras.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Instrumentos de <ofício>",
+        "preco": "30 T$",
+        "espaco": "1",
+        "descricao": "Existe uma versão deste item para cada perícia de Ofício. Por exemplo, martelo, pregos e serrote para Ofício (carpinteiro), pergaminhos em branco, tinta e pena para Ofício (escriba) e assim por diante. Um personagem sem os instrumentos de seu Ofício sofre –5 nessa perícia.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Instrumento musical",
+        "preco": "35 T$",
+        "espaco": "1",
+        "descricao": "Um instrumento típico, como um bandolim, flauta ou lira.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Luneta",
+        "preco": "100 T$",
+        "espaco": "1",
+        "descricao": "Este instrumento valioso consiste de um cilindro metálico com duas lentes. Fornece +5 em testes de Percepção para observar coisas em alcance longo ou além.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Maleta de medicamentos",
+        "preco": "50 T$",
+        "espaco": "1",
+        "descricao": "Caixa de madeira com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este item sofre –5 em Cura",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Sela",
+        "preco": "20 T$",
+        "espaco": "1",
+        "descricao": "Uma peça de couro e pelego colocada sobre o lombo da montaria, sobre a qual o cavaleiro se senta. Inclui arreios para conduzir o animal. Um personagem montado em uma montaria sem sela sofre –5 em testes de Cavalgar. Usada no animal, a sela não ocupa espaço de carga do personagem.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Tambor das profundezas ",
+        "preco": "80 T$",
+        "espaco": "1",
+        "descricao": "Um instrumento típico de anões de Doherimm, capaz de sons graves e retumbantes. Enquanto empunha este item, o alcance da habilidade Inspiração e de qualquer Música de Bardo é dobrado. Conta como um instrumento musical.",
+        "categoria": "Itens",
+        "subcategoria": "Ferramentas"
+    },
+    {
+        "nome": "Andrajos de aldeão",
+        "preco": "1 T$",
+        "espaco": "1",
+        "descricao": "Roupas típicas de camponês. Consiste de camisa larga e calças soltas ou blusa e saia e não inclui botas — os mais pobres andam descalços. Fornece +2 em testes de Investigação para interrogar (ninguém se importa com o que um aldeão escuta) e, se você possuir o poder Aparência Inofensiva, a CD para resistir a ele aumenta em +2. Porém, impõe –2 em perícias baseadas em Carisma contra pessoas que se importam com classe social.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Bandana",
+        "preco": "5 T$",
+        "espaco": "1",
+        "descricao": "Um lenço tipicamente usado por bandidos e piratas. Fornece +1 em Intimidação.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Botas reforçadas",
+        "preco": "20 T$",
+        "espaco": "1",
+        "descricao": "Grossas e resistentes, estas botas de cano alto protegem contra perigos do terreno. Aumentam seu deslocamento em +1,5m se ele for reduzido por terreno difícil (após a redução).",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Camisa bufante",
+        "preco": "25 T$",
+        "espaco": "1",
+        "descricao": "Blusa colorida, com mangas e golas longas e encrespadas. Fornece +1 em Atuação.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Capa esvoaçante",
+        "preco": "25 T$",
+        "espaco": "1",
+        "descricao": "Favorita entre heróis ousados, esta capa de seda produz movimentos amplos e chamativos, que fornecem +1 em Enganação.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Capa pesada",
+        "preco": "15 T$",
+        "espaco": "1",
+        "descricao": "Uma capa de couro grossa e resistente. Protege e aquece o corpo, fornecendo +1 em Fortitude.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Casaco longo",
+        "preco": "20 T$",
+        "espaco": "1",
+        "descricao": "Feito de peles ou couro grosso forrado com lã, e impermeabilizado com óleo, este casaco é quente e pesado. Fornece +5 em testes de Fortitude para resistir a efeitos de frio, mas impõe penalidade de armadura de –2.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Chapéu arcano",
+        "preco": "50 T$",
+        "espaco": "1",
+        "descricao": "Com pinturas e bordados de símbolos místicos, este chapéu pontudo ajuda a canalizar energias mágicas. Ele fornece +1 ponto de mana, mas apenas se você possuir a habilidade de classe Caminho do Arcanista.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Enfeite de elmo",
+        "preco": "15 T$",
+        "espaco": "1",
+        "descricao": "Um adorno chamativo, como crina de cavalo, plumas, asas ou um totem de animal. Fornece resistência a medo +2",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Farrapos de ermitão",
+        "preco": "1 T$",
+        "espaco": "1",
+        "descricao": "Trapos 'adornados' com plantas e raízes. Uma pessoa vestindo farrapos de ermitão não parece muito civilizada, e sofre –2 em Diplomacia e em testes de Investigação para interrogar. Entretanto, recebe +2 em Adestramento.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Gorro de ervas",
+        "preco": "75 T$",
+        "espaco": "1",
+        "descricao": "Formado por duas camadas de tecido, este chapéu é preenchido com ervas preparadas para auxiliar a concentração do usuário. Fornece +1 em Vontade.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Luva de pelica",
+        "preco": "5 T$",
+        "espaco": "1",
+        "descricao": "Estas luvas delicadas preservam o tato e impedem que o suor deixe os dedos escorregadios. Fornecem +1 em Ladinagem.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Manto camuflado",
+        "preco": "12 T$",
+        "espaco": "1",
+        "descricao": "Um manto camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, na página 51). Por exemplo, um manto camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um manto urbano pode ser cinza ou negro. Usar um manto camuflado no terreno correto fornece +2 em Furtividade",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Manto eclesiástico",
+        "preco": "20 T$",
+        "espaco": "1",
+        "descricao": "Um manto típico de igrejas e templos. Fornece +1 em Religião.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Robe místico",
+        "preco": "50 T$",
+        "espaco": "1",
+        "descricao": "Um manto longo, adornado com temas arcanos. Fornece +1 em Misticismo.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Sapatos de camurça",
+        "preco": "8 T$",
+        "espaco": "1",
+        "descricao": "Leves e resistentes, aprimoram o equilíbrio e a firmeza dos pés, fornecendo +1 em Acrobacia.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Tabardo",
+        "preco": "10 T$",
+        "espaco": "1",
+        "descricao": "Uma peça de tecido usada como um colete, cobrindo o peito e as costas. Geralmente ostenta a heráldica de um reino, igreja, casa nobre ou ordem de cavaleiros. Fornece +1 em Diplomacia",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Traje da corte",
+        "preco": "100 T$",
+        "espaco": "1",
+        "descricao": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Inclui algumas joias, como aneis e colares. Em certos ambientes (um baile, um salão de palácio), um personagem que não esteja vestindo este item sofre –5 em perícias baseadas em Carisma.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Traje de viajante",
+        "preco": "10 T$",
+        "espaco": "1",
+        "descricao": "Inclui botas, calças ou saias, cinto, camisa de linho e capa com capuz. A roupa padrão de aventureiros.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Veste de seda",
+        "preco": "25 T$",
+        "espaco": "1",
+        "descricao": "Esta roupa leve e elegante deixa seus movimentos os mais livres possíveis. Fornece +1 em Reflexos.",
+        "categoria": "Itens",
+        "subcategoria": "Vestuário"
+    },
+    {
+        "nome": "Bolsa de pó",
+        "preco": "300 T$",
+        "espaco": "1",
+        "descricao": "Uma bolsa com pó multicolorido, fabricado a partir das pétalas trituradas de flores que nascem apenas na Pondsmânia. Quando lança uma magia de encantamento ou ilusão, você recebe +2 PM para gastar em aprimoramentos.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Cajado arcano",
+        "preco": "1.000 T$",
+        "espaco": "2",
+        "descricao": "Um cajado típico, feito de madeira de boa qualidade e entalhado com runas. O limite de PM que você pode gastar em magias arcanas e a CD para resistir a elas aumentam em +1. Para fornecer seus benefícios, um cajado precisa ser empunhado com as duas mãos. Ele pode ser usado como arma, com as estatísticas de um bordão",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Cetro elemental",
+        "preco": "750 T$",
+        "espaco": "1",
+        "descricao": "Este cetro possui uma pedra preciosa em sua ponta: esmeralda (ácido), topázio (eletricidade), rubi (fogo) ou safira (frio). Quando lança uma magia que causa dano do tipo da pedra, o dano aumenta em um dado do mesmo tipo.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Costela de lich",
+        "preco": "300 T$",
+        "espaco": "1",
+        "descricao": "Esta varinha é feita a partir do osso de um morto-vivo. Suas magias causam +1d6 pontos de dano de trevas. Se estiver empunhando esta varinha você não recupera PV por efeitos mágicos de cura.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Dedo de ente",
+        "preco": "200 T$",
+        "espaco": "1",
+        "descricao": "Uma varinha feita da madeira de uma árvore senciente. Sempre que gastar pelo menos 1 PM para lançar uma magia, role 1d4. Com um resultado 4, você recupera 1 PM.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Luva de ferro",
+        "preco": "150 T$",
+        "espaco": "1",
+        "descricao": "Um conjunto de dedais interligados por correntes. Suas magias arcanas pessoais que concedem bônus na Defesa ou em testes de resistências têm esse bônus aumentado em +1",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Medalhão de prata",
+        "preco": "750 T$",
+        "espaco": "1",
+        "descricao": "Gravado com uma runa pessoal do conjurador, este medalhão de prata diminui em –1 PM o custo de magias de alcance pessoal",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Orbe cristalino",
+        "preco": "750 T$",
+        "espaco": "1",
+        "descricao": "Esta esfera perfeita concentra seu poder mágico. O limite de PM que você pode gastar em magias arcanas aumenta em +1",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Tomo hermético",
+        "preco": "1.500 T$",
+        "espaco": "1",
+        "descricao": "Um livro de tratados que aumentam a sua compreensão sobre uma escola de magia específica. A CD para resistir a suas magias arcanas dessa escola aumenta em +2.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "Varinha arcana",
+        "preco": "100 T$",
+        "espaco": "1",
+        "descricao": "Uma varinha típica, feita de madeira de boa qualidade e entalhada com runas. A CD para resistir a suas magias arcanas aumenta em +1.",
+        "categoria": "Itens",
+        "subcategoria": "Esotéricos"
+    },
+    {
+        "nome": "",
+        "preco": " T$",
+        "espaco": "1",
+        "descricao": "",
+        "categoria": "Itens",
+        "subcategoria": ""
     }
 ]
