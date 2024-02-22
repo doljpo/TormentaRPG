@@ -48,6 +48,7 @@
 
 .card:hover {
     transform: translateY(-5px);
+    background-color: #3d3d3d;
 }
 
 .mensagem {
@@ -56,6 +57,39 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+}
+
+.select-container select,
+.select-container button {
+    padding: 10px;
+    border: 1px solid #5d5d5d;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    color: #fff;
+    appearance: none;
+    cursor: pointer;
+}
+
+.select-container select:focus,
+.select-container button:focus {
+    outline: none;
+    border-color: #be2a05;
+}
+
+.select-container select::placeholder,
+.select-container button::placeholder {
+    color: #ccc;
+}
+
+.select-container button {
+    margin-top: 10px;
+    background-color: #be2a05;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.select-container button:hover {
+    background-color: #eb370a;
 }
 
 @media only screen and (max-width: 991px) {
