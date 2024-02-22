@@ -1,0 +1,250 @@
+[
+    {
+        "nome": "Ácido",
+        "preco": "10 T$",
+        "espaco": "0,5",
+        "descricao": "Um frasco de vidro contendo um ácido alquímico altamente corrosivo. Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se você acertar, o alvo sofre 2d4 pontos de dano de ácido, Se errar, ele sofre metade desse dano.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Água Benta",
+        "preco": "25 T$",
+        "espaco": "0,5",
+        "descricao": "Criada por clérigos e vendida em pequenos frascos, a água benta é uma poderosa arma contra mortosvivos e espíritos Malignos (mas é inofensiva contra outras criaturas). Você atira o frasco, fazendo um ataque à distância resistido por um teste de Reflexos do alvo. Se acertar, o alvo sofre 2d6 pontos de dano. Se errar, ele sofre metade desse dano.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Bálsamo Restaurador",
+        "preco": "10 T$",
+        "espaco": "0,5",
+        "descricao": " Uma pasta verde e fedorenta, feita de ervas medicinais. Usá-la é uma ação completa e recupera 2d4 pontos de vida.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Cosmético",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": "Perfume ou maquiagem. Usá-lo é uma ação completa e fornece +2 em testes de perícias baseadas em Carisma até o fim da cena",
+        "categoria": "Alquimicos",
+        "subcategoria": "Especial"
+    },
+    {
+        "nome": "Elixir do amor",
+        "preco": "100 T$",
+        "espaco": "0,5",
+        "descricao": "Um humanoide que beba este líquido adocicado fica apaixonado pela primeira criatura que enxergar (condição enfeitiçado; Vontade CD Car anula). O efeito dura 1d3 dias.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Essência de mana",
+        "preco": "50 T$",
+        "espaco": "0,5",
+        "descricao": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Fogo Alquímico",
+        "preco": "10 T$",
+        "espaco": "0,5",
+        "descricao": "É um frasco que contém uma substância grossa e pegajosa, e que entra em combustão ao entrar em contato com o ar. Você atira o frasco, fazendo um ataque de toque à distância (ataque oposto a um teste de Reflexos). Se você acertar, o alvo sofre 1d6 pontos de dano e pega fogo. Se errar, ele sofre metade desse dano e não pega fogo. Uma criatura em chamas sofre 1d6 pontos de dano no fim do seu próximo turno, a menos que apague as chamas (com uma ação completa).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Pó de Azgher",
+        "preco": "50 T$",
+        "espaco": "0,5",
+        "descricao": "Este frasco de cerâmica contém um pó que explode em contato com o ar. Quando o frasco é arremessado e quebra, qualquer criatura num raio de 6m deve fazer um teste de Fortitude (CD 20). Uma criatura que falhe fica atordoada por uma rodada, devido ao brilho e barulho da explosão.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Pó do desaparecimento",
+        "preco": "100 T$",
+        "espaco": "0,5",
+        "descricao": "Uma criatura ou objeto coberto por este pó torna-se invisível (como em Invisibilidade) por 2d6 rodadas. O usuário não sabe quando a invisibilidade vai terminar.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Poções"
+    },
+    {
+        "nome": "Baga-de-Fogo",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": " Pequeno fruto vermelho, apreciado por seu sabor picante. Usado como catalisador, adiciona +1d6 de dano de fogo a magias.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Dente-de-dragão",
+        "preco": "45 T$",
+        "espaco": "0,5",
+        "descricao": "Uma flor comum em regiões montanhosas, especialmente nas Sanguinárias, possui formato parecido com uma presa de monstro. Suas propriedades místicas aumentam o dano de magias em um dado do mesmo tipo.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Essência abissal",
+        "preco": "150 T$",
+        "espaco": "0,5",
+        "descricao": "Um líquido espesso, produzido através do sangue de criaturas demoníacas. Aumenta os dados de dano de magias de fogo em uma categoria — d4 para d6, d6 para d8, d8 para d10 e d10 para d12 (o máximo).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Líquen lilás",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": "Esta estranha planta tem aspecto cristalino e cresce em abundância na região das Uivantes. Adiciona +1d6 de dano de frio a magias.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Musgo púrpura",
+        "preco": "45 T$",
+        "espaco": "0,5",
+        "descricao": "Encontrado em florestas fechadas, esse fungo cintilante possui propriedadesque fornecem +2 na CD de magias de ilusão.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Ossos de monstro",
+        "preco": "45 T$",
+        "espaco": "0,5",
+        "descricao": "Pequenas falanges de criaturas monstruosas, tratadas com óleos alquímicos. Fornece +2 na CD de magias de necromancia.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Pó de cristal",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": "Uma pitada de pó de um mineral cristalino puro, como quartzo ou topázio. Diminui o custo de magias de encantamento em –1 PM",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Pó de giz",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": "Calcário esmagado em pó, uma substância comum que, usada como catalisador, diminui o custo de magias de convocação em –1 PM.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Ramo verdejante",
+        "preco": "45 T$",
+        "espaco": "0,5",
+        "descricao": "Esta combinação de ervas potencializa magias de cura, aumentando sua cura em +1 PV por dado.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Saco de sal",
+        "preco": " T$",
+        "espaco": "0,5",
+        "descricao": "Um pequeno saco de couro com sal marinho. Fornece +2 na CD de magias de abjuração.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Seixo de âmbar",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": " Essa “gema” feita de seiva de árvore fossilizada diminui o custo de magias de transmutação em –1 PM.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Terra de cemitério",
+        "preco": "30 T$",
+        "espaco": "0,5",
+        "descricao": "Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Catalisadores"
+    },
+    {
+        "nome": "Beladona",
+        "preco": "1.500 T$",
+        "espaco": "0,5",
+        "descricao": "Planta extremamente tóxica que afeta o sistema nervoso da vítima. Ingestão, vítima fica paralisada (lenta) por 3 rodadas. A CD para fabricar e para resistir a este veneno aumenta em +5.",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Bruma sonolenta",
+        "preco": "150 T$",
+        "espaco": "0,5",
+        "descricao": "Um gás sonífero. Inalação, vítima fica inconsciente (enjoada por 1 rodada)",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Cicuta",
+        "preco": "60 T$",
+        "espaco": "0,5",
+        "descricao": "Planta cuja ingestão pode causar náusea, dores e até morte. Ingestão, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV)",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Essência de sombra",
+        "preco": "100 T$",
+        "espaco": "0,5",
+        "descricao": "Produzido a partir de compostos alquímicos que canalizam energia de trevas. Contato, vítima fica debilitada (fraca).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Névoa tóxica",
+        "preco": " T$",
+        "espaco": "0,5",
+        "descricao": "Este gás verde queima e corrói a pele e os pulmões. Inalação, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Peçonha comum",
+        "preco": "15 T$",
+        "espaco": "0,5",
+        "descricao": "Veneno típico, extraído de animais ou plantas tóxicas. Contato, perde 1d12 PV",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Peçonha concentrada",
+        "preco": "90 T$",
+        "espaco": "0,5",
+        "descricao": "Dose concentrada da peçonha comum. Contato, perde 1d12 PV por rodada durante 3 rodadas (perde 1d12 PV).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Peçonha potente",
+        "preco": "600 T$",
+        "espaco": "0,5",
+        "descricao": "Veneno poderoso, extraído de animais ou plantas perigosos. Contato, perde 2d12 PV por rodada durante 3 rodadas (perde 2d12 PV).",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Pó de lich",
+        "preco": "3.000 T$",
+        "espaco": "0,5",
+        "descricao": "Veneno letal, usado para assassinar alvos poderosos. Ingestão, perde 4d12 PV por rodada durante 5 rodadas (perde 4d12 PV). A CD para fabricar e para resistir a este veneno aumenta em +5",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    },
+    {
+        "nome": "Riso de Nimb",
+        "preco": "150 T$",
+        "espaco": "0,5",
+        "descricao": "Este gás púrpura faz a vítima rir descontroladamente e agir de forma caótica. Inalação, vítima fica confusa (lenta por 1 rodada)",
+        "categoria": "Alquimicos",
+        "subcategoria": "Venenos"
+    }
+]

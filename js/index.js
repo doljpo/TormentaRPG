@@ -61,10 +61,10 @@ Itens
     Diversos
     Comestivel
 
-Pocoes
-    Cura
-    Mana
-    Diversa
+Alquimicos
+    Pocoes
+    Venenos
+    Catalisadores
 
 
     Itens e materiais mágicos:
@@ -95,28 +95,28 @@ const TipoItem = {
     ARMADURAS: 1,
     ESCUDOS: 2,
     ITENS: 3,
-    POCOES: 4
+    ALQUIMICOS: 4
 };
 
 armas = [];
 armaduras = [];
 escudos = [];
 itens = [];
-pocoes = [];
+alquimicos = [];
 
 Promise.all([
     carregarItens('armas'),
     carregarItens('armaduras'),
     carregarItens('escudos'),
     carregarItens('itens'),
-    carregarItens('pocoes')
+    carregarItens('alquimicos')
 ])
     .then(resultados => {
         armas = resultados[TipoItem.ARMAS];
         armaduras = resultados[TipoItem.ARMADURAS];
         escudos = resultados[TipoItem.ESCUDOS];
         itens = resultados[TipoItem.ITENS];
-        pocoes = resultados[TipoItem.POCOES];
+        alquimicos = resultados[TipoItem.ALQUIMICOS];
     })
     .catch(error => {
         console.error('Erro ao carregar os dados:', error);
@@ -180,8 +180,8 @@ function filtrarItens() {
         case 'Itens':
             itensFiltrados = itens;
             break;
-        case 'Poções':
-            itensFiltrados = pocoes;
+        case 'Alquimicos':
+            itensFiltrados = alquimicos;
             break;
         default:
             console.error('Erro ao carregar lista de itens');
@@ -210,8 +210,8 @@ function atualizarSubcategorias() {
         adicionarOpcoesSubcategoria(['Leves', 'Pesados', 'De Corpo']);
     } else if (categoriaSelecionada === 'Itens') {
         adicionarOpcoesSubcategoria(['Equipamento de Aventura', 'Esotéricos', 'Ferramentas', 'Vestuário']);
-    } else if (categoriaSelecionada === 'Poções') {
-        adicionarOpcoesSubcategoria(['Vida', 'Mana', 'Especial']);
+    } else if (categoriaSelecionada === 'Alquimicos') {
+        adicionarOpcoesSubcategoria(['Catalisadores', 'Poções', 'Venenos']);
     } else {
         subcategoriaSelect.disabled = true;
         limparLista();
@@ -245,8 +245,8 @@ function exibirItens(itens) {
         case 'Itens':
             listarItens(itens);
             break;
-        case 'Poções':
-            console.log('console.log(listarPocoes);');
+        case 'Alquimicos':
+            listarAlquimicos(itens);
             break;
         default:
             limparLista();
@@ -392,6 +392,43 @@ function listarEscudos(itens) {
 }
 
 function listarItens(itens) {
+
+    var container = document.getElementById('equipamentos-container');
+    container.innerHTML = '';
+
+    itens.forEach(function (item) {
+        var card = document.createElement('div');
+        card.classList.add('card');
+        var cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        // Nome
+        var nome = document.createElement('p');
+        nome.classList.add('fz-bigger');
+        nome.innerHTML = '<strong>' + item.nome + '</strong>';
+
+        // Preço
+        var preco = document.createElement('p');
+        preco.innerHTML = '<strong>Preço:</strong> ';
+        var precoValor = document.createElement('span');
+        precoValor.innerHTML = item.preco;
+        preco.appendChild(precoValor);
+
+        // Descrição
+        var descricao = document.createElement('span');
+        descricao.classList.add('mb-1')
+        descricao.innerHTML = '<strong>Descrição:</strong> ' + item.descricao;
+
+        cardBody.appendChild(nome);
+        cardBody.appendChild(preco);
+        cardBody.appendChild(descricao);
+
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    });
+}
+
+function listarAlquimicos(itens) {
 
     var container = document.getElementById('equipamentos-container');
     container.innerHTML = '';

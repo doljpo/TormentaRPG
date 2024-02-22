@@ -139,7 +139,7 @@
         "alcance": "3m",
         "espaco": "0,5",
         "tipo": "Fogo",
-        "descricao": "popular entre goblins, mas também empregada por outros usuários de pólvora, esta bomba rudimentar tem um pavio que deve ser aceso antes do uso (ação de movimento). Arremessar uma granada é um ataque de toque à distância. Qualquer criatura a até 3m do alvo sofre 4d6 pontos de dano (ou metade, se bem sucedido no teste de Reflexos contra o ataque).",
+        "descricao": "Popular entre goblins, mas também empregada por outros usuários de pólvora, esta bomba rudimentar tem um pavio que deve ser aceso antes do uso (ação de movimento). Arremessar uma granada é um ataque de toque à distância. Qualquer criatura a até 3m do alvo sofre 4d6 pontos de dano (ou metade, se bem sucedido no teste de Reflexos contra o ataque).",
         "categoria": "Armas",
         "subcategoria": "Simples"
     },
