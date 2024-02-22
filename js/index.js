@@ -108,8 +108,8 @@ Promise.all([
     carregarItens('armas'),
     carregarItens('armaduras'),
     carregarItens('escudos'),
-    carregarItens('pocoes'),
-    carregarItens('itens')
+    carregarItens('itens'),
+    carregarItens('pocoes')
 ])
     .then(resultados => {
         armas = resultados[TipoItem.ARMAS];
@@ -243,7 +243,7 @@ function exibirItens(itens) {
             listarEscudos(itens);
             break;
         case 'Itens':
-            console.log('listarItens(itens);');
+            listarItens(itens);
             break;
         case 'Poções':
             console.log('console.log(listarPocoes);');
@@ -385,6 +385,43 @@ function listarEscudos(itens) {
         cardBody.appendChild(defesa);
         cardBody.appendChild(penalidade);
         cardBody.appendChild(preco);
+
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    });
+}
+
+function listarItens(itens) {
+
+    var container = document.getElementById('equipamentos-container');
+    container.innerHTML = '';
+
+    itens.forEach(function (item) {
+        var card = document.createElement('div');
+        card.classList.add('card');
+        var cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        // Nome
+        var nome = document.createElement('p');
+        nome.classList.add('fz-bigger');
+        nome.innerHTML = '<strong>' + item.nome + '</strong>';
+
+        // Preço
+        var preco = document.createElement('p');
+        preco.innerHTML = '<strong>Preço:</strong> ';
+        var precoValor = document.createElement('span');
+        precoValor.innerHTML = item.preco;
+        preco.appendChild(precoValor);
+
+        // Descrição
+        var descricao = document.createElement('span');
+        descricao.classList.add('mb-1')
+        descricao.innerHTML = '<strong>Descrição:</strong> ' + item.descricao;
+
+        cardBody.appendChild(nome);
+        cardBody.appendChild(preco);
+        cardBody.appendChild(descricao);
 
         card.appendChild(cardBody);
         container.appendChild(card);

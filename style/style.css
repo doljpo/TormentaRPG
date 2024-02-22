@@ -35,6 +35,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    padding-bottom: 1rem;
 }
 
 .mensagem {
@@ -43,10 +44,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    /*padding: 10px 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 @media only screen and (max-width: 991px) {
