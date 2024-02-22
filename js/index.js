@@ -261,6 +261,11 @@ function listarArmas(itens) {
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
+
+        card.addEventListener('click', function () {
+            abrirPopup(item.descricao);
+        });
+
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
@@ -473,4 +478,13 @@ function listarAlquimicos(itens) {
 function limparLista() {
     var container = document.getElementById('equipamentos-container');
     container.innerHTML = '';
+}
+
+function abrirPopup(descricao) {
+    document.getElementById('descricao-item').textContent = descricao;
+    document.getElementById('popup').style.display = 'block';
+}
+
+function fecharPopup() {
+    document.getElementById('popup').style.display = 'none';
 }

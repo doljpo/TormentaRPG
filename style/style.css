@@ -59,6 +59,10 @@
     background-color: #fff;
 }
 
+.select-container {
+    margin-left: 0.7rem;
+}
+
 .select-container select,
 .select-container button {
     padding: 10px;
@@ -90,6 +94,40 @@
 
 .select-container button:hover {
     background-color: #eb370a;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #be2a05;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+}
+
+.popup-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-left: 0.7rem;
+    margin-bottom: 20px;
+    color: #eb370a;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 991px) {
