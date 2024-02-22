@@ -66,17 +66,6 @@
         "subcategoria": "Pesados"
     },
     {
-        "nome": "Escudo pesado de ébano",
-        "preco": "500 T$",
-        "defesa": "+2",
-        "penalidade": "-2",
-        "espaco": "1",
-        "pv": "30",
-        "descricao": "Este imponente escudo de ébano, cuidadosamente talhado e ornamentado, emana uma aura de imponência e poder. Feito de um ébano excepcionalmente resistente, sua superfície polida reflete a luz de maneira sinistra, criando um contraste impressionante com as sombras que parecem dançar em sua escuridão.",
-        "categoria": "Escudos",
-        "subcategoria": "Pesados"
-    },
-    {
         "nome": "Escudo de corpo de madeira",
         "preco": "100 T$",
         "defesa": "+4",
