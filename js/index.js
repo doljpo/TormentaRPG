@@ -273,6 +273,7 @@ function listarArmas(itens) {
         // Preço
         var preco = document.createElement('span');
         preco.classList.add('float-right');
+        preco.classList.add('item-property');
         preco.innerHTML = '<strong>Preço:</strong> ';
         var precoValor = document.createElement('span');
         precoValor.innerHTML = item.preco;
@@ -344,6 +345,7 @@ function listarArmaduras(itens) {
         penalidade.innerHTML = '<strong>Penalidade:</strong> ' + item.penalidade;
         // Preço
         var preco = document.createElement('p');
+        preco.classList.add('item-property');
         preco.innerHTML = '<strong>Preço:</strong> ' + item.preco;
 
         cardBody.appendChild(nome);
@@ -379,6 +381,7 @@ function listarEscudos(itens) {
         penalidade.innerHTML = '<strong>Penalidade:</strong> ' + item.penalidade;
         // Preço
         var preco = document.createElement('p');
+        preco.classList.add('item-property');
         preco.innerHTML = '<strong>Preço:</strong> ' + item.preco;
 
         cardBody.appendChild(nome);
@@ -409,6 +412,7 @@ function listarItens(itens) {
 
         // Preço
         var preco = document.createElement('p');
+        preco.classList.add('item-property');
         preco.innerHTML = '<strong>Preço:</strong> ';
         var precoValor = document.createElement('span');
         precoValor.innerHTML = item.preco;
@@ -417,7 +421,7 @@ function listarItens(itens) {
         // Descrição
         var descricao = document.createElement('span');
         descricao.classList.add('mb-1')
-        descricao.innerHTML = '<strong>Descrição:</strong> ' + item.descricao;
+        descricao.innerHTML = item.descricao;
 
         cardBody.appendChild(nome);
         cardBody.appendChild(preco);
@@ -446,6 +450,7 @@ function listarAlquimicos(itens) {
 
         // Preço
         var preco = document.createElement('p');
+        preco.classList.add('item-property');
         preco.innerHTML = '<strong>Preço:</strong> ';
         var precoValor = document.createElement('span');
         precoValor.innerHTML = item.preco;
@@ -454,7 +459,7 @@ function listarAlquimicos(itens) {
         // Descrição
         var descricao = document.createElement('span');
         descricao.classList.add('mb-1')
-        descricao.innerHTML = '<strong>Descrição:</strong> ' + item.descricao;
+        descricao.innerHTML = item.descricao;
 
         cardBody.appendChild(nome);
         cardBody.appendChild(preco);

@@ -36,6 +36,18 @@
     border-radius: 5px;
     box-sizing: border-box;
     padding-bottom: 1rem;
+    background-color: #2b2b2b;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-property {
+    font-size: 1.1em;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .mensagem {
