@@ -2178,6 +2178,9 @@ function listarArmaduras(itens) {
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
+        card.addEventListener('click', function () {
+            abrirPopup(item.descricao);
+        });
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
@@ -2214,6 +2217,9 @@ function listarEscudos(itens) {
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
+        card.addEventListener('click', function () {
+            abrirPopup(item.descricao);
+        });
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
@@ -2250,6 +2256,9 @@ function listarItens(itens) {
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
+        card.addEventListener('click', function () {
+            abrirPopup(item.descricao);
+        });
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
@@ -2288,6 +2297,9 @@ function listarAlquimicos(itens) {
 
     itens.forEach(function (item) {
         var card = document.createElement('div');
+        card.addEventListener('click', function () {
+            abrirPopup(item.descricao);
+        });
         card.classList.add('card');
         var cardBody = document.createElement('div');
         cardBody.classList.add('card-body');
