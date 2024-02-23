@@ -100,41 +100,130 @@ const TipoItem = {
 
 armas = [];
 armaduras = [];
-escudos = [];
+escudos = [
+    {
+        "nome": "Escudo de Couro",
+        "preco": "5 T$",
+        "defesa": "+1",
+        "penalidade": "0",
+        "espaco": "1",
+        "pv": "4",
+        "descricao": "Um escudo composto de uma armação de madeira é esticado o couro de um animal ou outro material flexível.",
+        "categoria": "Escudos",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Escudo de madeira",
+        "preco": "8 T$",
+        "defesa": "+1",
+        "penalidade": "-1",
+        "espaco": "1",
+        "pv": "10",
+        "descricao": "Este escudo de madeira é amarrado no antebraço, deixando uma mão livre. O usuário pode carregar um objeto na mão do escudo, mas não manusear uma arma. Por ser de madeira ele não é muito resistente a certos tipos de dano como fogo. Eventualmente algumas flechas podem ficar presas em sua superfície.",
+        "categoria": "Escudos",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Escudo de metal",
+        "preco": "15 T$",
+        "defesa": "+1",
+        "penalidade": "-1",
+        "espaco": "1",
+        "pv": "15",
+        "descricao": "Com este equipamento o usuário pode carregar um objeto na mão do escudo, mas não manusear uma arma. O metal o torna mais resistente que a versão em madeira.",
+        "categoria": "Escudos",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Broquel",
+        "preco": "50 T$",
+        "defesa": "+1",
+        "penalidade": "-1",
+        "espaco": "1",
+        "pv": "15",
+        "descricao": "Esse pequeno escudo metálico é amarrado no antebraço, permitindo o uso de uma besta ou arco sem penalidades. Também pode usar o braço do escudo para empunhar uma arma (seja uma arma na mão inábil ou para empunhar uma arma de duas mãos), mas isso acarreta -1 de penalidade na jogada de ataque em função do peso adicional no braço. Essa penalidade se acumula com o modificador de lutar usando a mão inábil ou combater com duas armas. Quando usar uma arma na mão inábil, não recebe o bônus do broquel na CA durante o restante da rodada. Não é possível executar um ataque usando um broquel.",
+        "categoria": "Escudos",
+        "subcategoria": "Leves"
+    },
+    {
+        "nome": "Escudo pesado de madeira",
+        "preco": "25 T$",
+        "defesa": "+2",
+        "penalidade": "-2",
+        "espaco": "2",
+        "pv": "10",
+        "descricao": "Um escudo grande feito de madeira e empunhadura em couro. Um escudo deve ser amarrado no antebraço e empunhado na mão inábil. Um escudo grande e pesado, não é possível utilizar a mão do escudo para realizar qualquer tarefa",
+        "categoria": "Escudos",
+        "subcategoria": "Pesados"
+    },
+    {
+        "nome": "Escudo pesado de metal",
+        "preco": "50 T$",
+        "defesa": "+2",
+        "penalidade": "-2",
+        "espaco": "2",
+        "pv": "20",
+        "descricao": "Um escudo grande feito de metal e empunhadura em couro. Um escudo deve ser amarrado no antebraço e empunhado na mão inábil. Um escudo grande e pesado, não é possível utilizar a mão do escudo para realizar qualquer tarefa",
+        "categoria": "Escudos",
+        "subcategoria": "Pesados"
+    },
+    {
+        "nome": "Escudo de corpo de madeira",
+        "preco": "100 T$",
+        "defesa": "+4",
+        "penalidade": "-5",
+        "espaco": "3",
+        "pv": "20",
+        "descricao": "Esse enorme escudo de madeira é quase tão alto quanto quem o empunha. Para usar esse escudo, você precisa ter ao menos +4 de força. Não pode ser usado montado",
+        "categoria": "Escudos",
+        "subcategoria": "De Corpo"
+    },
+    {
+        "nome": "Escudo de corpo de metal",
+        "preco": "250 T$",
+        "defesa": "+7",
+        "penalidade": "-5",
+        "espaco": "4",
+        "pv": "30",
+        "descricao": "Tão largo e alto quanto o usuário, esse escudo é o escudo com a maior defesa que existe. Para usar esse escudo, você precisa ter ao menos +5 de força. Não pode ser usado montado",
+        "categoria": "Escudos",
+        "subcategoria": "De Corpo"
+    }
+];
 itens = [];
 alquimicos = [];
 
-Promise.all([
-    carregarItens('armas'),
-    carregarItens('armaduras'),
-    carregarItens('escudos'),
-    carregarItens('itens'),
-    carregarItens('alquimicos')
-])
-    .then(resultados => {
-        armas = resultados[TipoItem.ARMAS];
-        armaduras = resultados[TipoItem.ARMADURAS];
-        escudos = resultados[TipoItem.ESCUDOS];
-        itens = resultados[TipoItem.ITENS];
-        alquimicos = resultados[TipoItem.ALQUIMICOS];
-    })
-    .catch(error => {
-        console.error('Erro ao carregar os dados:', error);
-    });
+// Promise.all([
+//     carregarItens('armas'),
+//     carregarItens('armaduras'),
+//     carregarItens('escudos'),
+//     carregarItens('itens'),
+//     carregarItens('alquimicos')
+// ])
+//     .then(resultados => {
+//         armas = resultados[TipoItem.ARMAS];
+//         armaduras = resultados[TipoItem.ARMADURAS];
+//         escudos = resultados[TipoItem.ESCUDOS];
+//         itens = resultados[TipoItem.ITENS];
+//         alquimicos = resultados[TipoItem.ALQUIMICOS];
+//     })
+//     .catch(error => {
+//         console.error('Erro ao carregar os dados:', error);
+//     });
 
 
-function carregarItens(categoria) {
-    return fetch(`../itens/${categoria}.json`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erro ao carregar ${categoria}`);
-            }
-            return response.json();
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-        });
-}
+// function carregarItens(categoria) {
+//     return fetch(`../itens/${categoria}.json`)
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error(`Erro ao carregar ${categoria}`);
+//             }
+//             return response.json();
+//         })
+//         .catch(error => {
+//             console.error('Erro:', error);
+//         });
+// }
 
 var subcategoriaSelect = document.getElementById('subcategoria');
 subcategoriaSelect.disabled = true;
